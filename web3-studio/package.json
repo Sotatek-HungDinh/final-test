@@ -1,0 +1,17 @@
+{
+  "name": "web3-studio",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ web3-studio",
+    "create-local": "graph create --node http://localhost:8020/ web3-studio",
+    "remove-local": "graph remove --node http://localhost:8020/ web3-studio",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 web3-studio",
+    "deploy-rinkeby": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ sotatek-hungdinh/clawr-event --access-token 3df7f38cc3ac4193b100b1c224af2544"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.28.1",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}

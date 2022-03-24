@@ -1,0 +1,7 @@
+type HistoryEntity @entity {
+  id: ID!
+  user: Bytes! # address
+  amount: BigInt! # uint256
+  time: BigInt!
+  event: String!
+}
