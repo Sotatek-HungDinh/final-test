@@ -14,7 +14,11 @@ function getLibrary(provider, connector) {
 }
 const Web3ProviderNetwork = createWeb3ReactRoot("NETWORK");
 const client = createClient({
-  url: "https://api.thegraph.com/subgraphs/name/sotatek-hungdinh/clawr-event"
+  url: "https://api.thegraph.com/subgraphs/name/sotatek-hungdinh/clawr-event",
+  requestPolicy: 'network-only',
+  fetchOptions: {
+    cache: 'no-cache',
+  },
 })
 
 console.log(client)

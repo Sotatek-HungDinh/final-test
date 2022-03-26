@@ -121,7 +121,7 @@ function Connected(props) {
             <h6>Balance: {wethBalance} WETH</h6>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <h6 style={{overflow: "hidden", whiteSpace:"nowrap", textOverflow:"ellipsis", maxWidth:"200px", marginTop:"20px" }}>Token DD2 earned: {dd2earned}</h6>
+            <h6 style={{overflow: "hidden", whiteSpace:"nowrap", textOverflow:"ellipsis", maxWidth:"200px", marginTop:"20px" }}>DD2 earned: {dd2earned}</h6>
             <button className="btn btn-primary"  onClick={harvest}>Harvest</button>
           </div>
           <div style={{ textAlign: 'center' }}>
